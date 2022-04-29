@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.rel {
+  position: relative;
+}
+
+form {
+  width: 300px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+label {
+  align-self: flex-start;
+  margin-top: 10px;
+  font-size: 20px;
+  position: relative;
+}
+
+label::after {
+  content: "*";
+  color: #e62929;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 10px 30px 10px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 18px;
+  background: #f6f6f6;
+  transition: 0.2s ease;
+}
+
+button {
+  width: 100%;
+  padding: 10px 30px;
+  margin-top: 20px;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  transition: 0.3s ease;
+  cursor: not-allowed;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+button:not(:disabled):hover, button:not(:disabled):focus {
+  color: #fff;
+  background: #007bff;
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1254901961);
+}
+
+input:hover {
+  border: 1px solid #e0e0e0;
+}
+
+input:focus {
+  border: 1px solid #b0b0b0;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 36px;
+  padding: 9px;
+  background: #f6f6f6;
+  cursor: pointer;
+}
+
+.eye img {
+  transform: translateY(2px);
+}
+
+.list {
+  width: 20vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  background: #f1f1f1;
+  padding: 100px 10px;
+  border-radius: 10px;
+}
+
+.list_link {
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.list_link:hover {
+  background: #e7e7e7;
+}/*# sourceMappingURL=style.css.map */

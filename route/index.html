@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSP</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+</head>
+    <div class="main flex">
+        <form action="main.html" class="flex column">
+            <label for="login">
+                Логин
+            </label>
+            <input type="text" placeholder="a_zhetpisbaev" id="login" required autocomplete="off">
+
+            <div class="rel">
+                <div class="eye">
+                    <img src="/assets/icons/eye-closed.svg" alt="View password" id="eye">
+                </div>
+                <label for="password">
+                    Пароль
+                </label>
+                <input type="password" placeholder="ta(loQsac&" id="password" required>
+            </div>
+
+            <button type="submit" disabled>
+                Войти
+            </button>
+        </form>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
